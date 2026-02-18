@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeFi Assist | Google Sheets&trade; Add-on</title>
+  <meta name="description" content="DeFi Assist for Google Sheets&trade;: automate portfolio updates, track DeFi positions, calculate metrics, and build a master dashboard across wallets.">
+  <meta property="og:title" content="DeFi Assist | Google Sheets&trade; Add-on">
+  <meta property="og:description" content="Automate DeFi data in Google Sheets&trade;. Install DeFi Assist from Google Workspace Marketplace&trade;.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/media/hero-dashboard.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="DeFi Assist home">
+        <img src="assets/media/da-logo.png" alt="DeFi Assist logo" width="132">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="#donate">Donate</a>
+      </nav>
+      <a class="button button-small" href="https://workspace.google.com/marketplace/app/defi_assist/481066029912" target="_blank" rel="noopener noreferrer">Install</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Google Sheets&trade; add-on for DeFi portfolio tracking</p>
+          <h1>Turn your wallet data into a live dashboard in Google Sheets&trade;</h1>
+          <p class="lead">
+            DeFi Assist connects your wallet activity with Google Sheets&trade; and keeps your portfolio data synced on schedule.
+            Track value, metrics, and transaction history without manual exports.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://workspace.google.com/marketplace/app/defi_assist/481066029912" target="_blank" rel="noopener noreferrer">Install from Marketplace</a>
+            <a class="button button-ghost" href="#features">See Features</a>
+          </div>
+          <p class="micro-note">
+            Works with Google Sheets&trade;. Built for EVM wallets and multi-chain DeFi workflows.
+          </p>
+        </div>
+        <div class="hero-media">
+          <img src="assets/media/hero-dashboard.svg" alt="Preview of DeFi Assist dashboard and portfolio metrics cards">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>What DeFi Assist does</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Wallet Tracker Mode</h3>
+            <p>Connect one wallet to a sheet, set update frequency and timezone, and keep portfolio data refreshed automatically.</p>
+          </article>
+          <article class="card">
+            <h3>Automated Portfolio Sync</h3>
+            <p>Collect protocol and token positions, update current value, and maintain a clean portfolio table for analysis.</p>
+          </article>
+          <article class="card">
+            <h3>Key Metrics Engine</h3>
+            <p>Calculate IRR, ROI, P&amp;L, investments, and withdrawals from your transaction history directly inside Sheets.</p>
+          </article>
+          <article class="card">
+            <h3>Cross-chain Transactions</h3>
+            <p>Fetch transaction history by chain, process old and new records, and monitor progress in the sidebar.</p>
+          </article>
+          <article class="card">
+            <h3>Master Dashboard Mode</h3>
+            <p>Aggregate multiple wallet spreadsheets into a single dashboard with imported current value, P&amp;L, and last update.</p>
+          </article>
+          <article class="card">
+            <h3>Privacy-first Approach</h3>
+            <p>No email harvesting. Data is used to run the add-on workflows and sync your DeFi reporting in Google Sheets&trade;.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container install-panel">
+        <div>
+          <h2>Install DeFi Assist</h2>
+          <p>Open the Google Workspace Marketplace&trade; page and install the add-on to start tracking your DeFi portfolio in Sheets.</p>
+        </div>
+        <a class="button button-primary" href="https://workspace.google.com/marketplace/app/defi_assist/481066029912" target="_blank" rel="noopener noreferrer">Go to Marketplace</a>
+      </div>
+    </section>
+
+    <section id="donate" class="section">
+      <div class="container donate-panel">
+        <div class="donate-copy">
+          <p class="eyebrow">Support the project</p>
+          <h2>If DeFi Assist saves you time, consider a small donation</h2>
+          <p>Any network, any token. Your support helps maintain and improve the add-on.</p>
+          <div class="donate-wallet-row">
+            <code class="wallet-address" id="donationWalletAddress">0xF15C6Cc6Da0eF64ee329A88402A2fEAC06e33998</code>
+            <button type="button" class="button button-ghost donate-copy-button" data-copy-wallet data-wallet="0xF15C6Cc6Da0eF64ee329A88402A2fEAC06e33998">Copy address</button>
+          </div>
+        </div>
+        <figure class="donate-qr">
+          <img src="assets/media/donation-wallet-qr.svg" width="196" height="196" alt="QR code for donation wallet 0xF15C6Cc6Da0eF64ee329A88402A2fEAC06e33998" loading="lazy">
+          <figcaption>Scan to donate</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/media/da-logo.png" alt="DeFi Assist logo" width="116">
+        <p>DeFi Assist for Google Sheets&trade;.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+        <a href="#donate">Donate</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:defiassist@gmail.com">defiassist@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

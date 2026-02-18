@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support | DeFi Assist</title>
+  <meta name="description" content="Support and FAQ for DeFi Assist add-on.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="DeFi Assist home">
+        <img src="assets/media/da-logo.png" alt="DeFi Assist logo" width="132">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="index.html#donate">Donate</a>
+      </nav>
+      <a class="button button-small" href="https://workspace.google.com/marketplace/app/defi_assist/481066029912" target="_blank" rel="noopener noreferrer">Install</a>
+    </div>
+  </header>
+
+  <main class="support-main">
+    <section class="section">
+      <div class="container support-wrap">
+        <p class="eyebrow">DEFI ASSIST add-on</p>
+        <h1>Support and FAQ</h1>
+        <p class="micro-note" style="margin: 0.6rem 0 1.2rem;">Last updated: February 17, 2026.</p>
+
+        <details class="faq-item" open>
+          <summary>How does DeFi Assist work?</summary>
+          <div class="faq-content">
+            <p><strong>1. Setup:</strong> In Google Sheets&trade;, open the add-on sidebar, enter a wallet address, choose update frequency and timezone, then submit.</p>
+            <p><strong>2. Portfolio sync:</strong> DeFi Assist fetches protocol and token data and writes it to your spreadsheet.</p>
+            <p><strong>3. Metrics:</strong> You can run transaction processing and calculate key metrics (IRR, ROI, P&amp;L, investments, and withdrawals).</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What modes are available?</summary>
+          <div class="faq-content">
+            <p><strong>Wallet Tracker:</strong> Track one wallet per spreadsheet with scheduled updates and metrics.</p>
+            <p><strong>Master Dashboard:</strong> Aggregate multiple wallet spreadsheets into one dashboard (current value, P&amp;L, last update).</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Why do I see #REF! in Master Dashboard?</summary>
+          <div class="faq-content">
+            <p>This usually means Google Sheets&trade; is waiting for IMPORTRANGE permission.</p>
+            <p>Open the <strong>Master Dashboard</strong> sheet and click <strong>Allow access</strong> in the affected cell.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How is my data handled?</summary>
+          <div class="faq-content">
+            <p>Wallet addresses, schedule settings, and generated analytics are stored in your Google Sheets&trade; document and related Google Apps Script&trade; properties/cache.</p>
+            <p>To fetch DeFi data, wallet address and query parameters are sent to supported third-party DeFi APIs.</p>
+            <p>For full details, review our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Why is update time different from my local expectation?</summary>
+          <div class="faq-content">
+            <p>Schedule execution depends on selected timezone and Google Apps Script&trade; trigger behavior.</p>
+            <p>If timing looks wrong, verify the timezone field in the sidebar and re-submit settings.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What should I include when contacting support?</summary>
+          <div class="faq-content">
+            <p>Email <a href="mailto:defiassist@gmail.com">defiassist@gmail.com</a> and include:</p>
+            <ul>
+              <li>the issue summary and steps to reproduce,</li>
+              <li>whether you are using Wallet Tracker or Master Dashboard,</li>
+              <li>screenshot of the sidebar or affected sheet,</li>
+              <li>exact error message text.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/media/da-logo.png" alt="DeFi Assist logo" width="116">
+        <p>DeFi Assist for Google Sheets&trade;.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+        <a href="index.html#donate">Donate</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:defiassist@gmail.com">defiassist@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
